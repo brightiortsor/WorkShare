@@ -1,3 +1,7 @@
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import "./globals.css";
+
 export const metadata = {
   title: "WorkShare",
   description: "Showcase your work to the world and get hired",
@@ -10,7 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
